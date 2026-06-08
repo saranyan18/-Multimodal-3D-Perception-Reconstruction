@@ -2,7 +2,7 @@
 
 
 > **Dataset:** KITTI Raw Sequence `2011_09_26_drive_0023`
-> **Timeline:** 10 Days from receipt
+
 
 ---
 
