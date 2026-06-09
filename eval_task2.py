@@ -4,7 +4,7 @@ import sys
 
 def main():
     print("=================================================================")
-    print("📋 TASK 2: OFFICIAL 'EVO' TRAJECTORY EVALUATION")
+    print("TASK 2: OFFICIAL 'EVO' TRAJECTORY EVALUATION")
     print("=================================================================\n")
     
     gt_file = 'ground_truth.tum'
@@ -13,7 +13,7 @@ def main():
     
 
     if not os.path.exists(gt_file) or not os.path.exists(est_file):
-        print(f"❌ [CRITICAL] Missing TUM files. Please run 'python task2.py' first.")
+        print(f"[CRITICAL] Missing TUM files. Please run 'python task2.py' first.")
         sys.exit(1)
         
     print(f"Executing evo_ape (Absolute Pose Error) alignment protocol...")
@@ -36,13 +36,12 @@ def main():
             f.write(result.stdout)
             
         print("\n" + result.stdout)
-        print(f"✅ [SUCCESS] Official metrics parsed and saved to: {report_file}")
+        print(f"[SUCCESS] Official metrics parsed and saved to: {report_file}")
         
     except FileNotFoundError:
-        print("❌ [ERROR] The 'evo' toolkit is not installed on your system.")
-        print("👉 Fix this by running: pip install evo")
+        print("[ERROR] The 'evo' toolkit is not installed on your system.")
     except subprocess.CalledProcessError as e:
-        print("❌ [ERROR] The evo evaluation failed.")
+        print(" [ERROR] The evo evaluation failed.")
         print(e.stderr)
 
 if __name__ == "__main__":
