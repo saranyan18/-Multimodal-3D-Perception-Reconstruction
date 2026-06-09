@@ -11,10 +11,10 @@ def run_step(script_name):
     result = subprocess.run([sys.executable, script_name])
     
     if result.returncode != 0:
-        print(f"\n[CRITICAL ERROR] {script_name} failed with exit code {result.returncode}. Pipeline halted.")
+        print(f"\n[ERROR] {script_name} failed with exit code {result.returncode}. Pipeline halted.")
         sys.exit(result.returncode)
     else:
-        print(f"\n[SUCCESS] Completed {script_name} cleanly.")
+        print(f"\n[SUCCESS] Completed {script_name}.")
 
 def main():
     print("=================================================================")
@@ -50,11 +50,10 @@ def main():
         
     print("\n" + "="*65)
     print("ALL CORE DATA PIPELINE PROCESSING STAGES EXECUTED SUCCESSFULLY!")
-    print("Deliverables generated:")
-    print(" -> Task 1 Proofs: Check the './task1_output' folder")
-    print(" -> Task 2 Metrics: Check the 'task2_evo_report.txt' file")
+    print(" -> Task 1 Proofs:  './task1_output' folder")
+    print(" -> Task 2 Metrics:  'task2_evo_report.txt' file")
     print(" -> Task 3 Dataset Sandbox: Ready at './splat_data'")
-    print("\n👉 NEXT STEP: Run 'ns-train splatfacto --data ./splat_data' to train.")
+    print("\nRun 'ns-train splatfacto --data ./splat_data' to train.")
     print("="*65 + "\n")
 
 if __name__ == "__main__":
