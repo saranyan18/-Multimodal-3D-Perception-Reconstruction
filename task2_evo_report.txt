@@ -1,0 +1,15 @@
+=== IDLE ROBOTICS: TASK 2 METRICS EVALUATION ===
+Tool: evo (Python Trajectory Evaluation Pack)
+Metric: Absolute Pose Error (APE) with rigid alignment
+
+APE w.r.t. translation part (m)
+(with SE(3) Umeyama alignment)
+
+       max	1.034674
+      mean	0.340801
+    median	0.341825
+       min	0.053829
+      rmse	0.361094
+       sse	13.038914
+       std	0.119347
+
