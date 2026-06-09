@@ -87,4 +87,4 @@ for frame_idx in range(start_frame, start_frame + num_frames_to_process):
     cv2.imwrite(output_filename, image, [cv2.IMWRITE_PNG_COMPRESSION, 0])  # FIX: lossless export
 
 print(f"\nSuccess! 10 frames saved to {output_dir}.")
-print("Review the images to ensure the laser points match the physical boundaries perfectly.")
+print("Review the images to ensure the laser points match the physical boundaries.")
