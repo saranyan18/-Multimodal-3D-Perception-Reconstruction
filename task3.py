@@ -124,7 +124,7 @@ def main():
     with open(json_out_path, "w") as f:
         json.dump(meta, f, indent=4)
         
-    print(f"[SUCCESS] Task 3 sandbox built flawlessly with LiDAR point clouds initialized!")
+    print(f"[SUCCESS] Task 3 sandbox built with LiDAR point clouds initialized")
 
 if __name__ == "__main__":
     main()
