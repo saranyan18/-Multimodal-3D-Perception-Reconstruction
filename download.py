@@ -41,4 +41,4 @@ for filename, url in urls.items():
     except Exception as e:
         print(f"\nAn error occurred while processing {filename}: {e}")
 
-print("\n[SUCCESS] Everything is downloaded and structured perfectly inside your './data' folder!")
+print("\n[SUCCESS] Everything is downloaded and structured inside './data' folder!")
