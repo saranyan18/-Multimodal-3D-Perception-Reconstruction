@@ -21,10 +21,7 @@ Multimodal 3D Perception & Reconstruction Pipeline
 ## Repository Structure
 
 ```
-.
-├── data/                        # KITTI raw dataset (not committed — see Setup)
-│   └── 2011_09_26/
-│       └── 2011_09_26_drive_0023_sync/
+
 ├── task1_output/                # Generated: 10 LiDAR-projection proof frames (PNG)
 ├── splat_data/                  # Generated: Nerfstudio-compatible dataset
 │   ├── images/                  # Extracted camera frames
@@ -38,8 +35,10 @@ Multimodal 3D Perception & Reconstruction Pipeline
 ├── estimated_trajectory.csv     # Generated: full trajectory (CSV)
 ├── estimated_trajectory.tum     # Generated: trajectory in TUM format
 ├── ground_truth.tum             # Reference ground truth (TUM format)
-├── task2_evo_report.txt         # Generated: official evo APE report
+├── task2_evo_report.txt
+├── output.json
 └── README.md
+
 ```
 
 ---
