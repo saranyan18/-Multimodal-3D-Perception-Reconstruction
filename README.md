@@ -23,10 +23,6 @@ Multimodal 3D Perception & Reconstruction Pipeline
 ```
 
 ├── task1_output/                # Generated: 10 LiDAR-projection proof frames (PNG)
-├── splat_data/                  # Generated: Nerfstudio-compatible dataset
-│   ├── images/                  # Extracted camera frames
-│   ├── transforms.json          # Camera pose metadata
-│   └── sparse_pc.ply            # LiDAR point cloud initializer
 ├── task1.py                     # LiDAR → Camera projection script
 ├── task2.py                     # Odometry / trajectory estimation script
 ├── task3.py                     # 3DGS data preparation script
