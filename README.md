@@ -170,7 +170,7 @@ Use the camera trajectory from Task 2 to initialize and train a 3DGS model for p
 
 ### Deliverables
 
-- **Fly-through video:** (https://github.com/saranyan18/-Multimodal-3D-Perception-Reconstruction/blob/main/result%20video.mp4)
+- **Fly-through video:** (https://drive.google.com/file/d/1umJtr3imtvm-K4BonN_9ginDmRXf0Hoi/view?usp=drive_link)
 
 ---
 
